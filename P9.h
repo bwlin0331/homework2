@@ -1,0 +1,15 @@
+void* Teacher();
+void* Child();
+void* Parent();
+void teacher_enter();
+void teach();
+void teacher_exit();
+void go_home();
+void child_enter();
+void learn();
+void child_exit();
+void go_home();
+void parent_enter();
+void verify_compliance();
+void parent_exit();
+void go_home();
