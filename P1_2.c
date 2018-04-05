@@ -18,19 +18,19 @@ void *fib(void *n){
  		//lock = 1;
 		printf("%d\n",lock);
      int *num = (int*)n; 
-     int  first = 0, second = 1, c;
+     int  first = 0, second = 1, i;
  		 long next;
-   for ( c = 0 ; c < *num ; c++ )
+   for (i = 0 ; i < *num ; i++ )
    {
-      if ( c <= 1 )
-         next = c;
+      if (i <= 1 )
+         next = i;
       else
       {
          next = first + second;
          first = second;
          second = next;
       }
-      array[c] = next; 
+      array[i] = next; 
    }
  		lock = 0;
 }
